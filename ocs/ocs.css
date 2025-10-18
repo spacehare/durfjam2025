@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@source "./ocs.html"
+@source "./ocs.html";
 
 @font-face {
 	font-family: "Atkinson Hyperlegible Next";
