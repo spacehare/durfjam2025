@@ -1,7 +1,18 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="./ocs.css" />
+		<link rel="stylesheet" type="text/css" href="reset.css" />
+		<link rel="stylesheet" type="text/css" href="ocs.css" />
 	</head>
 
-	<body></body>
+	<body>
+		<h1>Bestiary</h1>
+		<div>hello red</div>
+		<div style="color: blue">hello blue</div>
+		<div>
+			<h1>NPCS</h1>
+			{% for npc in bestiary.ocs %}
+			<div>{{ npc.name }}</div>
+			{% endfor %}
+		</div>
+	</body>
 </html>

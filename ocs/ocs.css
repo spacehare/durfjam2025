@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "Atkinson Hyperlegible Next";
+	src: url(AtkinsonHyperlegibleNext-VariableFont_wght.ttf);
+}
+
+@page {
+	margin: 0;
+}
+
+* {
+	color: black;
+	font-family: "Atkinson Hyperlegible Next" !important;
+}
+
+html {
+	background-color: red;
+}
+
+body {
+	background-color: aliceblue;
+}
+
+div {
+	background-color: silver;
+}

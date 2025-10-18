@@ -1,2 +1,5 @@
+lint.select = ["I"]
+fix = true
+
 [format]
 quote-style = 'preserve'
