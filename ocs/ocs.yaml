@@ -21,6 +21,7 @@ ocs:
     abils:
       - |
         **Spells** Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
+
         - **Gateway** (Opens a portal to a location visited by the caster.)
         - **Shape Stone** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a square shelter. They like to ascend pillars beneath people's feet.
         - **Polymorph** Transform target into a creature of the caster's choice. The target retains their intelligence.
@@ -64,6 +65,7 @@ ocs:
       - "**Tenacious** They don't feel any pain. Getting shot in the head would just make them dizzy. They can ignore lethal damage once."
       - |
         **Spells** Oolo knows the following spells:
+
         - **Charm** (WIL save or become friendly to caster for X turns)
         - **Clone** (Create a clone of the caster. The clone is *inactive* on the turn it is summoned. Their consciousness is shared, and it becomes hard to perform complex tasks as more clones are present.)
         - **Induce Sleep** (WIL save or fall asleep for X turns. Target wakes up early if hurt or shaken about.)
@@ -107,6 +109,7 @@ ocs:
     abils:
       - |
         Yrx knows these spells
+
         - "**Healing Hand** (Heals X+2 wounds)"
         - "**Copy Magic** (Gain one of the target's spells)"
         - "**Unmask** Upon being unmasked, Yrx will instantly become a slime."
@@ -267,6 +270,7 @@ ocs:
       - "**Pray** Spend one round praying. This allows Thruxx to cast a spell next round."
       - |
         Thruxx knows some spells, but they need to pray before being able to cast them.
+
         - **Turn Undead** Undead creatures with a combined amount of HD equal to the caster's WIL flee in terror.
         - **Restore** Heals X+2 wounds and removes disease from the target.
         - **Spectral Mace** Creates a spectral copy of their mace (Skill 3, HD 1) to fight alongside them.
@@ -292,6 +296,7 @@ ocs:
       - "**Immunity** Sprout is immune to disease and poison."
       - |
         Spells
+
         - **Lesser Grasp** Target must make a STR save or be held in place until caster sleeps.
         - **Pippi's Slumber** Nearby targets with a combined HD total of no more than X+2, fall asleep.
 

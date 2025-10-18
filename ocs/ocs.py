@@ -29,6 +29,9 @@ class Pronouns(NamedTuple):
     def from_subject(string: str, pronouns: dict) -> 'Pronouns':
         return Pronouns(*pronouns[string])
 
+    def __repr__(self):
+        return f"[{', '.join([self.subject, self.object, self.possessive_pronoun])}]"
+
 
 @dataclass
 class NPC:
@@ -41,10 +44,6 @@ class NPC:
     morale: int | None
     desc: str
     abils: list[str] = field(default_factory=list[str])
-
-    def markdownify(self):
-        self.desc = markdown(self.desc)
-        self.abils = [markdown(s) for s in self.abils]
 
     @staticmethod
     def from_dict(d: dict, all_pronouns: dict) -> 'NPC':
@@ -61,7 +60,13 @@ class NPC:
             desc=d.get('desc', ""),
             abils=d.get('abils', []),
         )
-        npc.markdownify()
+        npc.desc = str(markdown(npc.desc))
+        npc.abils = [str(markdown(s)) for s in npc.abils]
+
+        for a in d.get('abils', ''):
+            if '**Spells**' in a:
+                print(a)
+                print(markdown(a))
 
         return npc
 
@@ -77,8 +82,12 @@ def main() -> None:
     html_rendered: str = template.render(data_dict)
 
     css_tailwind: CSS = CSS(string=OCS_CSS_BUILD_PATH.read_text())
+    reset = CSS(string=Path("ocs/reset.css").read_text())
 
-    HTML(string=html_rendered).write_pdf(OCS_PDF_PATH, stylesheets=[css_tailwind])
+    HTML(string=html_rendered).write_pdf(
+        OCS_PDF_PATH,
+        stylesheets=[reset, css_tailwind],
+    )
 
 
 if __name__ == '__main__':

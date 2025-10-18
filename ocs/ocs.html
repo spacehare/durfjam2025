@@ -9,15 +9,26 @@
 				<span class="text-5xl">ORIGINAL CHARACTERS</span>
 			</h1>
 		</div>
-		<div>
-			<h1 class="text-3xl text-red-500">Bestiary</h1>
+		<div class="break-after-page">
 			<div>
 				<h1 class="underline font-black text-center text-2xl">NPCS</h1>
-				<div class="grid grid-cols-3 gap-2">
+				<div class="">
 					{% for npc in bestiary.ocs %}
-					<div class="border-black border-2 border-solid box-border">
+					<div
+						class="border-black border-2 border-solid box-border p-4 break-inside-avoid-page"
+					>
 						<h2 class="text-xl">{{ npc.name }}</h2>
 						<div>{{ npc.origin }}</div>
+						<div>{{ npc.pronouns }}</div>
+						<hr />
+						<div>{{ npc.desc }}</div>
+						<div>
+							<ul>
+								{% for abil in npc.abils%}
+								<li>{{ abil }}</li>
+								{% endfor %}
+							</ul>
+						</div>
 					</div>
 					{% endfor %}
 				</div>

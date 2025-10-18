@@ -10,5 +10,6 @@ export default {
 				"custom-properties": { preserve: false },
 			},
 		},
+		"postcss-calc": {},
 	},
 }

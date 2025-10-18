@@ -36,6 +36,10 @@ div {
 }
 
 @layer components {
+	li {
+		@apply list-disc ml-4;
+	}
+
 	.debug {
 		@apply underline text-center text-3xl text-gray-500;
 	}
