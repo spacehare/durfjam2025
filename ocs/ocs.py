@@ -63,11 +63,6 @@ class NPC:
         npc.desc = str(markdown(npc.desc))
         npc.abils = [str(markdown(s)) for s in npc.abils]
 
-        for a in d.get('abils', ''):
-            if '**Spells**' in a:
-                print(a)
-                print(markdown(a))
-
         return npc
 
 
