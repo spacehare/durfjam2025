@@ -1,0 +1,10 @@
+{
+	"scripts": {
+		"build:css": "tailwindcss -i ./ocs/ocs.css -o ./out/tailwind.css",
+		"build:pdf": "py -m ocs.ocs",
+		"build": "npm run build:css && npm run build:pdf"
+	},
+	"dependencies": {
+		"tailwindcss": "^4.1.14"
+	}
+}

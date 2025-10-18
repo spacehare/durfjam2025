@@ -1,17 +1,17 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="reset.css" />
-		<link rel="stylesheet" type="text/css" href="ocs.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="reset.css" /> -->
+		<link rel="stylesheet" type="text/css" href="../out/tailwind.css" />
 	</head>
 
 	<body>
-		<h1>Bestiary</h1>
+		<h1 class="text-lg text-red-500">Bestiary</h1>
 		<div>hello red</div>
 		<div style="color: blue">hello blue</div>
 		<div>
-			<h1>NPCS</h1>
+			<h1 class="underline font-black">NPCS</h1>
 			{% for npc in bestiary.ocs %}
-			<div>{{ npc.name }}</div>
+			<div class="debug">{{ npc.name }}</div>
 			{% endfor %}
 		</div>
 	</body>

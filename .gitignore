@@ -182,3 +182,4 @@ cython_debug/
 
 # rabbit gitignore
 out/
+node_modules/

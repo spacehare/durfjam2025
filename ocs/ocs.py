@@ -6,11 +6,14 @@ from weasyprint import CSS, HTML
 
 OCS_STEM: str = r"ocs"
 PDF_STEM = "bestiary"
+
 OCS_HTML_PATH: Path = Path(f"ocs/{OCS_STEM}.html")
+OCS_YAML_PATH: Path = Path(f"ocs/{OCS_STEM}.yaml")
 OCS_CSS_PATH: Path = Path(f"ocs/{OCS_STEM}.css")
 OCS_CSS_RESET_PATH: Path = Path(f"ocs/reset.css")
-OCS_YAML_PATH: Path = Path(f"ocs/{OCS_STEM}.yaml")
+
 OCS_PDF_PATH: Path = Path(f"out/{PDF_STEM}.pdf")
+OCS_CSS_TAILWIND_PATH: Path = Path(f"out/tailwind.css")
 
 
 def main() -> None:
@@ -21,12 +24,9 @@ def main() -> None:
     data_dict: dict = {'bestiary': ocs_data}
 
     html_rendered: str = template.render(data_dict)
-    css_main: CSS = CSS(string=OCS_CSS_PATH.read_text())
-    css_reset: CSS = CSS(string=OCS_CSS_RESET_PATH.read_text())
+    css_tailwind: CSS = CSS(string=OCS_CSS_TAILWIND_PATH.read_text())
 
-    HTML(string=html_rendered).write_pdf(
-        OCS_PDF_PATH, stylesheets=[css_main, css_reset]
-    )
+    HTML(string=html_rendered).write_pdf(OCS_PDF_PATH, stylesheets=[css_tailwind])
 
 
 if __name__ == '__main__':
