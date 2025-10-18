@@ -6,22 +6,25 @@
 	src: url(AtkinsonHyperlegibleNext-VariableFont_wght.ttf);
 }
 
-* {
-	color: black;
-	font-family: "Atkinson Hyperlegible Next" !important;
-	margin: 0;
-}
-
 @page {
-	margin: 0;
+	/* margin: 0; */
+	@bottom-center {
+		background: #fbc847;
+		content: counter(page);
+		height: 1cm;
+		text-align: center;
+		width: 1cm;
+	}
 }
 
 html {
 	background-color: darksalmon;
+	font-family: "Atkinson Hyperlegible Next" !important;
 }
 
 body {
 	background-color: aliceblue;
+	margin: 0;
 }
 
 div {
