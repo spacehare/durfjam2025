@@ -33,6 +33,6 @@ div {
 
 @layer components {
 	.debug {
-		@apply underline text-center;
+		@apply underline text-center text-3xl text-gray-500;
 	}
 }

@@ -1,10 +1,17 @@
 {
 	"scripts": {
-		"build:css": "tailwindcss -i ./ocs/ocs.css -o ./out/tailwind.css",
+		"build:tailwindcss": "tailwindcss -i ./ocs/ocs.css -o ./out/out.css",
+		"build:postcss": "postcss ./ocs/ocs.css -o ./out/out.css",
 		"build:pdf": "py -m ocs.ocs",
-		"build": "npm run build:css && npm run build:pdf"
+		"build": "bun run build:postcss && bun run build:pdf"
 	},
 	"dependencies": {
+		"@tailwindcss/postcss": "^4.1.14",
+		"postcss": "^8.5.6",
+		"postcss-preset-env": "^10.4.0",
 		"tailwindcss": "^4.1.14"
+	},
+	"devDependencies": {
+		"postcss-cli": "^11.0.1"
 	}
 }
