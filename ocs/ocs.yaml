@@ -161,7 +161,7 @@ ocs:
     morale: 6
     desc: |
       The settlement's guard. Assertive and protective. The oldest goblin in the settlement. They wear heavy armor and wield a special spear.
-    abils: |
+    abils:
       - "**Shield** Reduce all incoming damage by 1, to a minimum of 1."
       - "**Guardian** If an adjacent ally is about to be hit, take the hit instead."
       - "**Ornate Spear** A beautiful and shiny +1 spear. 5 dmg."
