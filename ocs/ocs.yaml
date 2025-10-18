@@ -243,6 +243,7 @@ ocs:
       - "**Mutate.** Change adapt a target's form with attributes from a character they have assimilated or eaten. Can target self for no roll, but 1 turn cost."
       - "**Revive.** After taking lethal damage, Uzu will resuscitate after 1 day."
       - "**Synthesize.** Uzu can synthesize many different chemicals; Depressants, stimulants, sedatives, emetics, aphrodisiacs, analgesics..."
+      - "**Chitin.** Uzu has natural armor that provides the same benefits as a Shield (reduces by 1, to a minimum of 1)."
 
   - name: Cleric Thruxx'Ondros
     from: D&D 5e
@@ -375,6 +376,11 @@ ocs:
   - name: Rigoth
     from: "Blackbirds (Zweihander)"
     pronouns: [they]
+    desc: |
+      A spectrum of living plants. Likes to make jokes; doesn't take things too seriously. They are good at cooking, crafting, and survival.
+    abils:
+      - "**Just Another Bush** If Rigoth keeps still, they are indistinguishable from a bush. This is mostly useful in forests."
+      - "**Fragrant Foliage** Rigoth's leaves smell very strongly of weed."
 
   - name: Finnio
     from: Baldur's Gate 3
