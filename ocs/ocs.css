@@ -42,7 +42,8 @@ html {
 
 /* https://github.com/Kozea/WeasyPrint/issues/1665#issuecomment-2139068800 */
 /*`min-w-0` KINDA works but still overflows */
-.item:first-child {
+/* `ml-4 first:ml-0` is pretty good */
+/* .item:first-child {
 	margin: 0 4px 0 0;
 }
 
@@ -52,4 +53,4 @@ html {
 
 .item:first-child:last-child {
 	margin: 0 0 0 0;
-}
+} */
