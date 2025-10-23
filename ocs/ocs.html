@@ -17,13 +17,14 @@
 				<h1 class="underline font-black text-center text-2xl">NPCS</h1>
 				{% for npc in bestiary.ocs %}
 				<!-- NPC CARD -->
-				<div class="border-black border-2 border-solid box-border p-4 break-inside-avoid-page min-h-0">
+				<div class="border-[#ccc] border-2 border-solid box-border p-4 break-inside-avoid-page min-h-0">
 					<div class="flex justify-between">
 						<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
 						<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
 						<div class="flex self-center w-fit min-w-0">
+							<!-- <div class="whitespace-nowrap">{{ npc.pronouns | join(', ')}}</div> -->
 							{% for pronouns in npc.pronouns %}
-							<div class="whitespace-nowrap ml-[1cm] first:ml-0 min-w-0">
+							<div class="whitespace-nowrap ml-[0.6cm] first:ml-0 min-w-0 border-2 border-[#ddd] p-1">
 								{{ pronouns }}
 							</div>
 							{% endfor %}
