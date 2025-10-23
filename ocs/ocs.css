@@ -17,8 +17,19 @@
 	}
 }
 
+@page :left {
+	@bottom-left {
+		content: counter(page);
+	}
+}
+@page :right {
+	@bottom-right {
+		content: counter(page);
+	}
+}
+
 html {
-	background-color: #ddd;
+	/* background-color: #ddd; */
 	font-family: "Atkinson Hyperlegible Next" !important;
 }
 
