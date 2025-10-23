@@ -40,6 +40,8 @@ html {
 	padding: 2cm;
 }
 
+/* flexbox troubles */
+/* https://stackoverflow.com/questions/38223879/white-space-nowrap-breaks-flexbox-layout */
 /* https://github.com/Kozea/WeasyPrint/issues/1665#issuecomment-2139068800 */
 /*`min-w-0` KINDA works but still overflows */
 /* `ml-4 first:ml-0` is pretty good */

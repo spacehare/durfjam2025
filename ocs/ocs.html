@@ -19,13 +19,12 @@
 					<div
 						class="border-black border-2 border-solid box-border p-4 break-inside-avoid-page"
 					>
-						<div class="flex justify-between bg-yellow-400!">
+						<div class="flex justify-between">
 							<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
-							<div class="flex self-center bg-red-500! w-fit min-w-0">
+							<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
+							<div class="flex self-center w-fit min-w-0">
 								{% for pronouns in npc.pronouns %}
-								<div
-									class="whitespace-nowrap bg-lime-500! ml-[1cm] first:ml-0 min-w-0"
-								>
+								<div class="whitespace-nowrap ml-[1cm] first:ml-0 min-w-0">
 									{{ pronouns }}
 								</div>
 								{% endfor %}
