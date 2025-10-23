@@ -70,12 +70,15 @@ def main() -> None:
     html_raw: str = OCS_HTML_PATH.read_text()
     template: Template = Template(html_raw)
 
+    # yaml
     data: dict = yaml.safe_load(OCS_YAML_PATH.open())
     ocs: list[NPC] = [NPC.from_dict(oc, data['pronouns']) for oc in data['ocs']]
 
+    # jinja2
     data_dict: dict = {'bestiary': {'ocs': ocs}}
     html_rendered: str = template.render(data_dict)
 
+    # css
     css_tailwind: CSS = CSS(string=OCS_CSS_BUILD_PATH.read_text())
     reset = CSS(string=Path("ocs/reset.css").read_text())
 

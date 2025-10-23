@@ -18,17 +18,8 @@
 }
 
 html {
-	background-color: darksalmon;
+	background-color: #ddd;
 	font-family: "Atkinson Hyperlegible Next" !important;
-}
-
-body {
-	background-color: aliceblue;
-	margin: 0;
-}
-
-div {
-	background-color: silver;
 }
 
 .debug {
@@ -43,4 +34,22 @@ div {
 	.debug {
 		@apply underline text-center text-3xl text-gray-500;
 	}
+}
+
+.oc-card {
+	padding: 2cm;
+}
+
+/* https://github.com/Kozea/WeasyPrint/issues/1665#issuecomment-2139068800 */
+/*`min-w-0` KINDA works but still overflows */
+.item:first-child {
+	margin: 0 4px 0 0;
+}
+
+.item:last-child {
+	margin: 0 0 0 4px;
+}
+
+.item:first-child:last-child {
+	margin: 0 0 0 0;
 }

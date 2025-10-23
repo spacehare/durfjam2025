@@ -23,7 +23,7 @@ ocs:
         **Spells** Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
 
         - **Gateway** (Opens a portal to a location visited by the caster.)
-        - **Shape Stone** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a square shelter. They like to ascend pillars beneath people's feet.
+        - **Shape Stone** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a square shelter. They like to ascend pillars beneath people's feet. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
         - **Polymorph** Transform target into a creature of the caster's choice. The target retains their intelligence.
         - **Summon-Conjure** Create a small portal, out of which an item or creature is ejected.
 
@@ -242,11 +242,11 @@ ocs:
       - "**Weave Webs.** Can create sticky traps out of web, or enwrap creatures in cocoons."
       - "**Acid.**. Can carve out rock to create tunnels and warrens."
       - "**Burrow.** Can vibrate to sink into soft material like sand or soil."
-      - "**Swallow.** Nonlethally store target inside of their body, gathering data to use in mutations."
+      - "**Swallow.** Nonlethally store target inside of their body, gathering data to use in mutations. Can **Mutate** targets within their body easier."
       - "**Mutate.** Change adapt a target's form with attributes from a character they have assimilated or eaten. Can target self for no roll, but 1 turn cost."
       - "**Revive.** After taking lethal damage, Uzu will resuscitate after 1 day."
       - "**Synthesize.** Uzu can synthesize many different chemicals; Depressants, stimulants, sedatives, emetics, aphrodisiacs, analgesics..."
-      - "**Chitin.** Uzu has natural armor that provides the same benefits as a Shield (reduces by 1, to a minimum of 1)."
+      - "**Chitin.** Uzu has natural armor that provides the same benefits as a Shield (reduces damage by 1, to a minimum of 1)."
 
   - name: Cleric Thruxx'Ondros
     from: D&D 5e
