@@ -1,51 +1,64 @@
 <html>
-	<body>
-		<div class="break-after-page">
-			<h1 class="text-center text-6xl m-auto">
-				BESTIARY
-				<br />
-				<span class="text-3xl">of</span>
-				<br />
-				<span class="text-5xl">ORIGINAL CHARACTERS</span>
-			</h1>
-		</div>
 
-		<div class="break-after-page w-full">
-			<div>
-				<div class="flex flex-col gap-2 *:min-w-0 min-w-0">
-					<h1 class="underline font-black text-center text-2xl">NPCS</h1>
-					{% for npc in bestiary.ocs %}
-					<!-- NPC CARD -->
-					<div
-						class="border-black border-2 border-solid box-border p-4 break-inside-avoid-page"
-					>
-						<div class="flex justify-between">
-							<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
-							<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
-							<div class="flex self-center w-fit min-w-0">
-								{% for pronouns in npc.pronouns %}
-								<div class="whitespace-nowrap ml-[1cm] first:ml-0 min-w-0">
-									{{ pronouns }}
-								</div>
-								{% endfor %}
+<body>
+	<div class="break-after-page">
+		<h1 class="text-center text-6xl m-auto">
+			BESTIARY
+			<br />
+			<span class="text-3xl">of</span>
+			<br />
+			<span class="text-5xl">ORIGINAL CHARACTERS</span>
+		</h1>
+	</div>
+
+	<div class="break-after-page w-full">
+		<div>
+			<div class="flex flex-col gap-2 *:min-w-0 min-w-0">
+				<h1 class="underline font-black text-center text-2xl">NPCS</h1>
+				{% for npc in bestiary.ocs %}
+				<!-- NPC CARD -->
+				<div class="border-black border-2 border-solid box-border p-4 break-inside-avoid-page">
+					<div class="flex justify-between">
+						<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
+						<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
+						<div class="flex self-center w-fit min-w-0">
+							{% for pronouns in npc.pronouns %}
+							<div class="whitespace-nowrap ml-[1cm] first:ml-0 min-w-0">
+								{{ pronouns }}
 							</div>
-						</div>
-						<div>
-							<div>{{ npc.origin }}</div>
-						</div>
-						<hr />
-						<div>{{ npc.desc }}</div>
-						<div>
-							<ul>
-								{% for abil in npc.abils %}
-								<li>{{ abil }}</li>
-								{% endfor %}
-							</ul>
+							{% endfor %}
 						</div>
 					</div>
-					{% endfor %}
+					<div>
+						<div>{{ npc.origin }}</div>
+					</div>
+					<hr />
+					<!-- STATS -->
+					<div class="flex gap-[0.5cm] mb-[0.2cm]">
+						<div><strong>Skill</strong> {{ npc.skill }}</div>
+						<div>
+							<strong>HD</strong> {{ npc.hd }} ({{ npc.armor if npc.armor else 'no' }} Armor)
+							{% if npc.armor %}
+
+							{% endif %}
+						</div>
+						<div><strong>ML</strong> {{ npc.morale }}</div>
+					</div>
+					<!-- DESCRIPTION -->
+					<div class="mb-[0.2cm] *:border-black [&_p]:first:mt-0 [&_p]:mt-[0.1cm]">
+						{{ npc.desc }}</div>
+					<div>
+						<ul>
+							{% for abil in npc.abils %}
+							<li>{{ abil }}</li>
+							{% endfor %}
+						</ul>
+					</div>
 				</div>
+				{% endfor %}
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
