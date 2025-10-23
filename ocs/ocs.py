@@ -71,7 +71,7 @@ def main() -> None:
     template: Template = Template(html_raw)
 
     # yaml
-    data: dict = yaml.safe_load(OCS_YAML_PATH.open())
+    data: dict = yaml.safe_load(OCS_YAML_PATH.open(encoding='utf-8'))
     ocs: list[NPC] = [NPC.from_dict(oc, data['pronouns']) for oc in data['ocs']]
 
     # jinja2
