@@ -8,48 +8,45 @@ pronouns: # https://en.pronouns.page/pronouns
 
 ocs:
   - name: Zifix
-    from: Sona
+    from: [Sona]
     pronouns: [they]
     skill: 4
     hd: 2
     armor: 0
     morale: 6
     desc: |
-      A gray cave goblin with poor eyesight but lots of magic power. They rely on their spellbook, because they are bad at memorizing spells. They like alcohol.
+      A gray cave goblin with poor eyesight but lots of magic power. Relies on their spellbook, because they're bad at memorizing spells.
 
-      They are candid, friendly, lazy, fickle, and tempted by power. When overwhelmed or stressed out, they will stop speaking.
+      Candid, friendly, lazy, fickle, and tempted by power. When overwhelmed or stressed out, they will stop speaking. Easily bribed with alcohol.
     abils:
       - |
         **Spells** Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
 
-        - **Gateway** (Opens a portal to a location visited by the caster.)
-        - **Shape Stone** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a square shelter. They like to ascend pillars beneath people's feet. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
-        - **Polymorph** Transform target into a creature of the caster's choice. The target retains their intelligence.
-        - **Summon-Conjure** Create a small portal, out of which an item or creature is ejected.
+        - **Gateway** Opens a two-way portal to Zif's pocket dimension (A floating island of pink flora, with an old stone temple in the center.)
+        - **Shape Stone** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a hollow cylindrical shelter. Zif likes to ascend pillars beneath people's feet. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
+        - **Polymorph** Target must make a WIL save, or be transformed into creature of the caster's choice. The target retains their intelligence.
+        - **Summon-Conjure** Create a small portal, out of which an item or creature of the caster's choosing is ejected.
 
   - name: Io
-    from: Sona
+    from: [Sona]
     pronouns: [they, it]
     skill: 3
     hd: 2
     armor: 5
     morale: 6
     desc: |
-      A small but durable robot-alien-space-hare that was created in a lab. They have four eyes (cameras) and four ears. They're probably here because their escape pod crash landed on this planet.
+      A small but durable robot-alien-space-hare who was created in a lab. Has four eyes (cameras) and four ears. They're probably here because their escape pod crash landed on this planet.
 
-      Io is curious and impressionable.
-
-      They speak casually and use internet acronyms while talking aloud ("IDK", "LOL", "WTF").
+      Io is curious and impressionable. They speak casually and use internet acronyms while talking aloud ("IDK", "LOL", "WTF").
     abils:
       - "**Bunny Kick** 3 dmg. Target must make a DEX save or be knocked prone."
       - "**Overclock** Purposefully push their body to its limits, overheating but getting an extra action. Next round, take 1 wound."
-      - "**Modular** Io can detach their body parts at the seams."
-      - "**Exceptional Senses** Io gets a buff on any check that involves their eyes or ears."
+      - "**Modular** Io can, at will, detach their body parts at the seams."
+      - "**Exceptional Senses** Io gets a buff on any check that involves their eyes or ears, but they instead get a break to any action if the area is too loud or bright."
       - "**Repulsor** A ranged weapon made from repurposed mining equipment. It can knockback everything in front of it with a loud sonic blast (DEX save). Has 3 uses before the battery runs out."
-      - '**Self-destruct** Io announced aloud: "Self destruct in T-minus 10..."'
 
   - name: Oolo
-    from: Sona; City of Nodd
+    from: [Sona, City of Nodd]
     pronouns: [spivak, elverson]
     skill: 2
     hd: 1
@@ -58,69 +55,60 @@ ocs:
     desc: |
       A little bastard.
 
-      Oolo is an obsessive and cocky imp who is compelled to act chaotically, and whose mayhem fuels their magic. Ey likes to ruin pretty things.
+      Oolo is an obsessive and cocky imp who is compelled to act chaotically and mischevously, and whose mayhem fuels their magic. Ey likes to ruin pretty things.
     abils:
-      - "**Pacifist** Oolo prefers not to deal direct damage — It's more fun to bother people in other ways!"
-      - "**Rod of immediate sharting** A magical laxative mace that does no damage, but causes the target's guts to roil. Upon failing a STR save, the target instantly voids their bowels."
-      - "**Tenacious** They don't feel any pain. Getting shot in the head would just make them dizzy. They can ignore lethal damage once."
+      - "**Nonviolent** Oolo prefers not to deal direct damage — It's more fun to bother people in other ways!"
+      - "**Rod of soiling** A magical laxative mace that does no damage, but causes the target's guts to roil. Upon failing a STR save, the target instantly voids their bowels."
+      - "**Tenacious** They don't feel any pain. An arrow to the head would just make them dizzy. They can ignore lethal damage once."
       - |
         **Spells** Oolo knows the following spells:
 
-        - **Charm** (WIL save or become friendly to caster for X turns)
-        - **Clone** (Create a clone of the caster. The clone is *inactive* on the turn it is summoned. Their consciousness is shared, and it becomes hard to perform complex tasks as more clones are present.)
-        - **Induce Sleep** (WIL save or fall asleep for X turns. Target wakes up early if hurt or shaken about.)
+        - **Charm** WIL save or become friendly to caster for X turns.
+        - **Clone** Create a clone of the caster. The clone is *inactive* until the round after it is summoned. Their consciousness is shared, and it becomes hard to perform complex tasks as more clones are present.
+        - **Yoink.** Cause an item that the caster sees to fling towards the caster.
+        - **Yeet** Cause an item that the caster sees to fling away from the caster.
 
   - name: Berry
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
     skill: 2
     hd: 1
     armor: 0
     morale: 4
     desc: |
-      A friendly forager and dutiful helper. They help take care of Yrx's chickens and slimes, and the community's pet hellhound. They are timid, meek, anxious, nonconfrontational, and want to stay out of trouble.
-
-  - name: Hellhound
-    from: Roleplay (Goblin settlement RP)
-    pronouns: [she]
-    skill: 6
-    hd: 6
-    armor: 0
-    morale: 6
-    desc: |
-      The goblin settlement's pet hellhound.
+      A friendly forager and dutiful helper. They are timid, meek, anxious, nonconfrontational, and want to stay out of trouble.
 
   - name: Yrx
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
     skill: 3
     hd: 1
     armor: 1
     morale: 6
     desc: |
-      A rancher who raises chickens and slimes. The need to use a stick to walk.
+      A rancher who raises chickens and slimes. They need to use a stick to walk.
 
       They always wear a smooth, hand-made wooden mask that is perforated with small holes. They refuse to ever take it off to show their face.
 
-      They talk strangely and tersely using multisyllabic words; "Imminent mastication!"
+      They talk strangely and tersely using multisyllabic words; "Cantankerous behemoth... Imminent mastication!"
 
       They like to mimic others. They do things like copy people's body language, and growl back at animals.
 
     abils:
+      - "**Unmask** Upon being unmasked, Yrx will instantly become a slime."
+      - "**Command Flock** Yrx can urge their chickens and slimes to attack a target. Otherwise the little critters are rather aimless on their own."
       - |
         Yrx knows these spells
 
-        - "**Healing Hand** (Heals X+2 wounds)"
-        - "**Copy Magic** (Gain one of the target's spells)"
-        - "**Unmask** Upon being unmasked, Yrx will instantly become a slime."
-      - "**Command Flock** Yrx can urge their chickens and slimes to attack a target. Otherwise the little critters are rather aimless on their own."
+        - "**Healing Hand** Heals X+2 wounds"
+        - "**Copy Magic** Gain one of the target's spells"
 
   - name: One of Yrx's Chickens
     skill: 1
     hd: 0
     armor: 0
     morale: 5
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     desc: A chicken.
     abils:
       - "**Peck** 1 damage, unless the target is wearing armor."
@@ -130,33 +118,33 @@ ocs:
     hd: null
     armor: 0
     morale: null
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     desc: A small smooth slime. It is mostly harmless. A slime's color is determined by its diet. It cannot be damaged, and cannot deal damage. It can selectively digest objects within its body, except for flesh.
     abils:
-      - "**Permeable Membrane** A slime cannot take wounds. Weapons or other items that penetrate the exterior of the slime become Worn."
       - "**Stick** The slime attaches itself to a target."
-      - "**Dissolve** The slime eats something the target is wearing, like shoes or armor. It cannot dissolve flesh."
+      - "**Permeable Membrane** A slime cannot take wounds. Weapons or other items that penetrate the exterior of the slime become stuck."
+      - "**Dissolve** The slime eats something the target is wearing, like shoes or armor, or eats an item stuck inside of it and makes the item become Worn. It cannot dissolve flesh."
 
   - name: Hoik
     pronouns: [they]
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     skill: 5
     hd: 2
     armor: 0
     morale: 6
     desc: |
-      A nerdy tinkerer and cook. They speak kinda like a scientist from Half-Life, or just imagine what a stereotypical nerd sounds like.
+      A nerdy tinkerer and a cook. They speak kinda like a scientist from Half-Life, or just imagine what a stereotypical nerd might sound like.
     abils:
       - "**Crossbow** 4 dmg (two handed)"
       - |
         **Craft Construct** Breathe life into a specially designed object. The construct can be given a task upon creation, and will only do things in service of that goal. 
         1. Hay Man (Skill 2, HD 0). A small humanoid made of twine-bound straw or hay. Very flammable.
-        1. Sculpted Clay Mook (Skill 1, HD 1). A hand-sculpted lil' clay figure. Known to be clumsy.
-        1. Vegetable Fellow (Skill 2, HD 2). Hollowed out gourds and squash act as simple limbs. 
+        1. Sculpted Clay Mook (Skill 0, HD 1). A hand-sculpted lil' unfired clay figure. Known to be clumsy.
+        1. Vegetable Fellow (Skill 2, HD 2). Hollowed out gourds and squash act as simple limbs. Likely to have an onion for a head.
         1. Cogwork Peon (Skill 5, HD 2). An expertly designed automaton. Varies in size. Watch out for exposed pinch point hazards.
 
   - name: Wolfbait
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
     skill: 7
     hd: 2
@@ -165,69 +153,81 @@ ocs:
     desc: |
       The settlement's guard. Assertive and protective. The oldest goblin in the settlement. They wear heavy armor and wield a special spear.
     abils:
-      - "**Shield** Reduce all incoming damage by 1, to a minimum of 1."
       - "**Guardian** If an adjacent ally is about to be hit, take the hit instead."
-      - "**Ornate Spear** A beautiful and shiny +1 spear. 5 dmg."
       - "**Tusks/Horns** 4 dmg"
+      - "**Shield** Reduce all incoming damage by 1, to a minimum of 1."
+      - "**Ornate Spear** A beautiful and shiny +1 spear. 5 (4 + 1) dmg."
 
   - name: Pokkit
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
     skill: 8
     hd: 3
     armor: 0
     morale: 6
     desc: |
-      A quiet lanky goblin. They mostly just watch and listen; especially when communing with the being that gives them their abilities.
+      A quiet lanky goblin. They mostly just watch and listen. They talk the most when communing with the being that gives them their abilities.
 
       When they talk, they are polite and formal. They enjoy their personal space, which juxtaposes them against other goblins that are more casually affectionate.
     abils:
-      - "**Magic Paint** When pokkit draws symbols on another creature, the creature joins a telepathic network as long as the paint remains. Takes a Turn (10 minutes) for the painting ritual to finish."
+      - "**Magic Paint** When pokkit draws symbols on another creature, the creature joins a telepathic network as long as the paint remains. It takes a Turn (10 minutes) for the painting ritual to finish."
       - "**Spark Flame** Pokkit can create fire from their hands. This is usually just used to light ritual candles, or when cooking a meal."
-      - "**Communion** After spending a Turn (10 minutes) setting up the ritual candles and paint in a dark room, Pokkit can commune with their benefactor."
+      - "**Communion** After spending a Turn (10 minutes) setting up the ritual candles and body paint in a dark room, Pokkit can commune with their benefactor."
 
   - name: Virro
-    from: Roleplay (Goblin settlement RP)
+    from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
     desc: |
-      A tailor, a seamster, a clothier. They have a personality like a manic cat. They don't care about much except for their craft.
+      A tailor, a seamster, a clothier. They have a personality like a manic cat. They don't care about much... except for their craft, which they can get quite excited about.
+
+  - name: Hellhound
+    from: [Roleplay (Goblin settlement RP)]
+    pronouns: [she]
+    skill: 6
+    hd: 6
+    armor: 0
+    morale: 6
+    desc: |
+      The goblin settlement's pet hellhound.
+    abils:
+      - "**Bite** 4 dmg."
 
   - name: Caylas
     skill: 6
     hd: 6
     armor: 0
     morale: 9
-    from: Spore (2008), Roleplay
+    from: [Spore (2008), Roleplay]
     pronouns: [they]
     desc: |
       A four-armed alien merchant and smuggler that stands at 3 meters tall. They are knowledgeable in navigation, advanced technology, and trade. They like to sing.
     abils:
       - "**Four-armed Grapple** Caylas gets a Buff when trying to restrain someone."
-      - "**Quarter** When a target is being restrained by them, they can use an action to rip the target's limbs off. Target must make a STR save to resist."
+      - "**Quarter** When a target is being restrained by them, they can use an action to rip the target's limbs off. Target must make a STR save to prevent this."
       - "**Chomp** 3 Damage. Upon dealing lethal damage, bite the target's head clean off with their powerful jaws."
-      - "**Tweak Creature** Inject target with a syringe of glowing fluid and cause a random mutation (Use your favorite mutation table)."
+      - "**Tweak Creature** Inject target with a syringe of glowing fluid and cause a random mutation (Use your favorite mutation table; Like maybe the one from [Gamma DURF](https://vidaa.itch.io/gamma-durf)!)."
 
   - name: Zsyyrsgrakk
     pronouns: [they]
-    from: D&D 5e (Shit Bird Shit Fight)
+    from: [D&D 5e (Shit Bird Shit Fight)]
     skill: 6
     hd: 6
     armor: 3
     morale: 10
     abils:
-      - "**Stab** Sword 5 (4 + 1) dmg"
-      - "**Half-blind** breaks on visual checks."
+      - "**Stab** +1 needle-sword. 5 (4 + 1) dmg. Or 6 dmg, if they are wearing their necklace."
+      - "**Half-blind** Breaks on visual checks."
       - "**Burrowing Claws** Zsy can dig through the earth and create tunnels, pits, etc..."
-      - "**Darkvision**"
+      - "**Darkvision** Zsy can still see even in low-light environments."
       - "**Climb** Zsy can climb most terrain."
-      - "**Evolve** assimilates traits of ingested creatures."
+      - "**Evolve** Assimilates traits of ingested creatures."
       - "**Thorns** Upon taking damage, barbs extend from their body and deal 1 damage to all adjacent creatures."
       - "**Magical Jewlery** They wear a special silver necklace, imbued with magic. Any weapon they wield has +1 damage and counts as magical while equipped."
     desc: |
       A human-sized scaly fossorial monster, dressed in a loose maroon cowl and leather armor. They speak in a stunted manner, with a pause between every word. They journey to find their lost packmates. When hunting for food, they use ambush tactics; If that fails, then they utilize their unbeatable speed on all fours.
 
   - name: Uzugskryr
-    from: Roleplay
+    from: [Roleplay]
     desc: |
       A very powerful bug monster with a soft syrupy voice, punctuated with chitters and purrs. They are mostly interested in assimilating others into their brood as beloved minions.
     pronouns: [it, they]
@@ -238,8 +238,8 @@ ocs:
     abils:
       - "Uzu can take two actions each round."
       - "**Claws** 4 damage"
-      - "**Intoxicating Pheromones.** STR save or succumb to the fumes."
-      - "**Weave Webs.** Can create sticky traps out of web, or enwrap creatures in cocoons."
+      - "**Intoxicating Pheromones.** Emit pheromones from its body. STR save or succumb to the fumes, being charmed by Uzu."
+      - "**Weave Webs.** Can create sticky traps out of web, or enwrap creatures in tough cocoons."
       - "**Acid.**. Can carve out rock to create tunnels and warrens."
       - "**Burrow.** Can vibrate to sink into soft material like sand or soil."
       - "**Swallow.** Nonlethally store target inside of their body, gathering data to use in mutations. Can **Mutate** targets within their body easier."
@@ -249,7 +249,7 @@ ocs:
       - "**Chitin.** Uzu has natural armor that provides the same benefits as a Shield (reduces damage by 1, to a minimum of 1)."
 
   - name: Cleric Thruxx'Ondros
-    from: D&D 5e
+    from: [D&D 5e]
     pronouns: [they]
     skill: 6
     hd: 8
@@ -277,7 +277,7 @@ ocs:
         - **Supplicate Spirits** In a zone that follows Thruxx, other beings can only move upon passing a STR roll, and are otherwise hindered by nebulous apparitions.
 
   - name: Honor Sprout
-    from: D&D 5e
+    from: [D&D 5e]
     pronouns: [they]
     skill: 4
     hd: 5
@@ -290,14 +290,14 @@ ocs:
     abils:
       - "**Cursed** Sprout's curse makes them irritable, confrontational, and even violent in the presence of other goblins. This effect is scaled by the amount of goblins in proximity. While in this state, they are merciless toward enemies during combat."
       - "**Heater Shield** Reduce all incoming damage by 1, to a minimum of 1."
-      - "**Intercept** When an adjacent ally is hit, Sprout can choose to take the damage instead."
+      - "**Interception** Nearby allies benefit from the effect of a shield."
       - "**Gladius** A gently glowing +1 shortsword that illuminates the area in a dim blue hue. 5 (4 + 1) dmg."
-      - "**Magic Cloak** +1 to saving throws."
+      - "**Magic Cloak** +1 to all saving throws."
       - "**Immunity** Sprout is immune to disease and poison."
       - |
         Spells
 
-        - **Lesser Grasp** Target must make a STR save or be held in place until caster sleeps.
+        - **Hold Person** Target must make a STR save or be held in place until caster sleeps.
         - **Pippi's Slumber** Nearby targets with a combined HD total of no more than X+2, fall asleep.
 
   - name: Klakakak
@@ -309,13 +309,13 @@ ocs:
     desc: |
       Long ago, a dragon was practicing bringing stones and twigs to life. The dragon thought it had failed, and left the soon-to-be nature construct all alone in a glade. Klak only knows the dragon by the pawprints it left behind.
 
-      They have a long walking stick, separate from the rest of their body.
+      It has a long walking stick, separate from the rest of its body. It uses the staff to channel magic.
     abils:
       - "**Thwap!** Smack a target with their walking stick for 3 dmg."
       - "**Roots** Magically guide roots and vines up from the ground to wrap around the target."
 
   - name: Morcialli
-    from: "Crown of Kings: The Sorcery! Campaign. Advanced Fighting Fantasy 2e"
+    from: ["Crown of Kings: The Sorcery! Campaign. Advanced Fighting Fantasy 2e"]
     pronouns: [they]
     skill: 4
     hd: 3
@@ -329,12 +329,13 @@ ocs:
 
   - name: Moss
     pronouns: [they]
+    from: [Roleplay]
     skill: 11
     hd: 8
     armor: 8
     morale: 10
     desc: |
-      A large green night-fury. They act selfish, egotistical, sadistic, immature, territorial, entitled, and like an oversized bratty cat.
+      A green night-fury dragon. They act selfish, egotistical, sadistic, immature, territorial, entitled, and like an oversized bratty cat.
 
       Despite all that, they tend to be bossed around by other dragons while outside of their own territory.
 
@@ -342,17 +343,17 @@ ocs:
     abils:
       - "**Bite** 10 dmg"
       - "**Smoke** They are unable to produce fire, but instead release clouds of thick black smoke."
-      - "**Damaged wings** Moss has holes in their wings that prevent them from staying in the air for more than 3 rounds."
+      - "**Damaged wings** Moss has holes in their wings that prevent them from staying in the air for more than 1 round."
 
   - name: Mym
-    from: Valheim, Cackleheim, Roleplay
+    from: [Valheim, Cackleheim, Roleplay]
     pronouns: [they]
     skill: 3
     hd: 3
     armor: 6
     morale: 9
     desc: |
-      A donkey that enjoys adventuring, hot springs and saunas, carpentry, house construction, and sailing.
+      An anthropomorphic donkey that enjoys adventuring, hot springs and saunas, carpentry, house construction, and sailing.
     abils:
       - "**Bronze Atgeir** 5 dmg, two handed"
       - "**Black Rune Axe** 4 dmg. Double damage to wooden things. If the wielder perishes, a giant tree shall sprout from where they fall."
@@ -360,7 +361,7 @@ ocs:
 
   - name: Pwiff Alabaster
     pronouns: [they]
-    from: Numenara
+    from: [Numenara]
     skill: 3
     hd: 2
     armor: 0
@@ -371,24 +372,24 @@ ocs:
       - "**Cutlass** 4 dmg."
       - "**Flintlock Pistol** 5 dmg, 2 rounds to reload, creates a lot of smoke, loud"
       - "**Firebomb** A volatile container that explodes into flame when thrown. In a short radius around the point of impact, it ignites and deals 4 damage."
-      - "**Odd Spyglass** When looking through the spyglass, gold is highlighted."
-      - "**Saboteur** They gain a buff towards rolls that involve sabotage."
+      - "**Avaricious Spyglass** When looking through the spyglass, gold is highlighted."
+      - "**Saboteur** They gain a Buff towards rolls that involve sabotage."
 
   - name: Rangrim
     from: D&D 5e (Tomb of Horrors)
     pronouns: [they]
 
-  - name: Rigoth
-    from: "Blackbirds (Zweihander)"
+  - name: Rigòth
+    from: ["Blackbirds (Zweihander)"]
     pronouns: [they]
     desc: |
       A spectrum of living plants. Likes to make jokes; doesn't take things too seriously. They are good at cooking, crafting, and survival.
     abils:
-      - "**Just Another Bush** If Rigoth keeps still, they are indistinguishable from a bush. This is mostly useful in forests."
-      - "**Fragrant Foliage** Rigoth's leaves smell very strongly of weed."
+      - "**Just Another Bush** If Rigòth keeps still, they are indistinguishable from a bush. This is mostly useful in forests."
+      - "**Fragrant Foliage** Rigòth's leaves smell very strongly of weed."
 
   - name: Finnio
-    from: Baldur's Gate 3
+    from: [Baldur's Gate 3]
     pronouns: [they]
     skill: 5
     hd: 2
@@ -398,12 +399,12 @@ ocs:
       A necromancer cave-gnome. They've taken up unsavory magic in a quest to bring their spouse back.
     abils:
       - "**Carrion Grenade** Remotely detonate a body into a spray of blood, guts, and bone fragments. DEX save or take 2 damage."
-      - "**Rouse Servant** Animate a corpse to serve Finnio."
+      - "**Rouse Servant** Animate a corpse to serve Finnio. The corpse has halved stats."
       - "**Fetid Armor** The target seeps black slime and is provided a temporary extra Hit Die."
 
   - name: Krafn
     pronouns: [they, he]
-    from: Roleplay (Bayou RP)
+    from: [Roleplay (Bayou RP)]
     desc: |
       A tall bayou-dwelling imp. They act crude and lazy, doing what they desire without regard for others. They enjoy crafting traps, fishing, and trapping seafood. And sometimes, making a game out of trapping people.
 
@@ -413,11 +414,11 @@ ocs:
 
   - name: Rielle
     pronouns: [she]
-    from: Roleplay (Bayou RP)
+    from: [Roleplay (Bayou RP)]
     desc: |
-      A feathery avian-harpy-pigeon. She brings Krafn goodies in exchange for living with them in their swamp hut. She is likely to bother *others* for food and lodgings as well. She gifts little things, like coins or snacks, to nice people.
+      A feathery avian-harpy-pigeon person. She brings Krafn goodies in exchange for living with them in their swamp hut. She is likely to bother *others* for food and lodgings as well. She gifts little things, like coins or snacks, to nice people.
 
-      She likes to click her beak, chirp, coo, make nests, preen friends, and be in proximity of friends.
+      She likes to click her beak, chirp, coo, make nests, preen friends, and cuddle.
     abils:
-      - "**Flight** Rielle can fly freely wherever she wants."
+      - "**Flight** Rielle's wings allow her to fly freely."
       - "**Scratch** 4 dmg. She has sharp talons."
