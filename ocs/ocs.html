@@ -18,6 +18,8 @@
 				{% for npc in bestiary.ocs %}
 				<!-- NPC CARD -->
 				<div class="border-[#ccc] border-2 border-solid box-border p-4 break-inside-avoid-page min-h-0">
+
+					<!-- PRONOUNS -->
 					<div class="flex justify-between">
 						<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
 						<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
@@ -30,10 +32,23 @@
 							{% endfor %}
 						</div>
 					</div>
-					<div>
-						<div>{{ npc.origin }}</div>
+
+					<!-- ORIGINS -->
+					<div class="flex self-center w-fit min-w-0">
+						{% for place in npc.origin %}
+						<div class="whitespace-nowrap ml-[0.5cm] first:ml-0 min-w-0">
+							{{ place }}
+						</div>
+						{% if not loop.last %}
+						<div class="ml-[0.5cm]">
+							—
+						</div>
+						{% endif %}
+						{% endfor %}
 					</div>
+
 					<hr />
+
 					<!-- STATS -->
 					<div class="flex gap-[0.5cm] mb-[0.2cm]">
 						<div><strong>Skill</strong> {{ npc.skill }}</div>

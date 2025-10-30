@@ -376,8 +376,18 @@ ocs:
       - "**Saboteur.** They gain a Buff towards rolls that involve sabotage."
 
   - name: Rangrim
-    from: D&D 5e (Tomb of Horrors)
+    from: [D&D 5e (Tomb of Horrors)]
     pronouns: [they]
+    skill: 5
+    hd: 4
+    armor: 6
+    morale: 8
+    desc: |
+      An old sailor dwarf. Hunts evils and pirates in revenge of their crew. Superstitious about the color green.
+    abils:
+      - "**Enchanted Trident.** 5 (4+1) dmg, two-handed"
+      - "**Throwing axe.** 3 dmg"
+      - "**Careful.** Always able to spot traps."
 
   - name: Rigòth
     from: ["Blackbirds (Zweihander)"]

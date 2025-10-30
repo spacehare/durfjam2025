@@ -36,7 +36,7 @@ class Pronouns(NamedTuple):
 @dataclass
 class NPC:
     name: str
-    origin: str
+    origin: list[str]
     pronouns: list[Pronouns]
     skill: int | None
     hd: int | None
@@ -49,7 +49,7 @@ class NPC:
     def from_dict(d: dict, all_pronouns: dict) -> 'NPC':
         npc = NPC(
             name=d['name'],
-            origin=d.get('from', ""),
+            origin=d.get('from', []),
             pronouns=[
                 Pronouns.from_subject(p, all_pronouns) for p in d.get('pronouns', [])
             ],
@@ -67,7 +67,7 @@ class NPC:
 
 
 def main() -> None:
-    html_raw: str = OCS_HTML_PATH.read_text()
+    html_raw: str = OCS_HTML_PATH.read_text(encoding='utf-8')
     template: Template = Template(html_raw)
 
     # yaml

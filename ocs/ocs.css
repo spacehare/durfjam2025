@@ -6,8 +6,7 @@
 	src: url(AtkinsonHyperlegibleNext-VariableFont_wght.ttf);
 }
 
-@page {
-	/* margin: 0; */
+/* @page {
 	@bottom-center {
 		background: #fbc847;
 		content: counter(page);
@@ -15,7 +14,7 @@
 		text-align: center;
 		width: 1cm;
 	}
-}
+} */
 
 @page :left {
 	@bottom-left {
@@ -25,6 +24,14 @@
 @page :right {
 	@bottom-right {
 		content: counter(page);
+	}
+}
+@page :first {
+	@bottom-left {
+		content: normal;
+	}
+	@bottom-right {
+		content: normal;
 	}
 }
 
