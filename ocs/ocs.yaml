@@ -14,6 +14,7 @@ ocs:
     hd: 2
     armor: 0
     morale: 6
+    art_fullbody_filename: _main_durfjam_2025-10-30.png
     desc: |
       A gray cave goblin with poor eyesight but lots of magic power. Relies on their spellbook, because they're bad at memorizing spells.
 
@@ -28,6 +29,7 @@ ocs:
         - **Summon-Conjure.** Create a small portal, out of which an item or creature of the caster's choosing is ejected.
 
   - name: Io
+    art_fullbody_filename: _main_durfjam_2025-10-30.png
     from: [Sona]
     pronouns: [they, it]
     skill: 3

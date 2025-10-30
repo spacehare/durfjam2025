@@ -1,3 +1,4 @@
+import logging
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import NamedTuple
@@ -6,6 +7,10 @@ import yaml
 from jinja2 import Template
 from markdown2 import markdown
 from weasyprint import CSS, HTML
+
+logger = logging.getLogger('weasyprint')
+logger.setLevel(logging.WARNING)
+logger.addHandler(logging.StreamHandler())
 
 OCS_STEM: str = r"ocs"
 PDF_STEM = "bestiary"
@@ -36,6 +41,7 @@ class Pronouns(NamedTuple):
 @dataclass
 class NPC:
     name: str
+    art_fullbody_path: str
     origin: list[str]
     pronouns: list[Pronouns]
     skill: int | None
@@ -47,6 +53,14 @@ class NPC:
 
     @staticmethod
     def from_dict(d: dict, all_pronouns: dict) -> 'NPC':
+        art_fullbody_filename = d.get('art_fullbody_filename', "")
+        art_fullbody_path = ""
+        if art_fullbody_filename:
+            art_fullbody_path = "file://" + str(
+                Path("ocs/art/" + art_fullbody_filename).absolute()
+            )
+            print(art_fullbody_filename)
+
         npc = NPC(
             name=d['name'],
             origin=d.get('from', []),
@@ -59,6 +73,7 @@ class NPC:
             skill=d.get('skill', None),
             desc=d.get('desc', ""),
             abils=d.get('abils', []),
+            art_fullbody_path=art_fullbody_path,
         )
         npc.desc = str(markdown(npc.desc))
         npc.abils = [str(markdown(s)) for s in npc.abils]
@@ -71,18 +86,25 @@ def main() -> None:
     template: Template = Template(html_raw)
 
     # yaml
+    print('parsing YAML')
     data: dict = yaml.safe_load(OCS_YAML_PATH.open(encoding='utf-8'))
     ocs: list[NPC] = [NPC.from_dict(oc, data['pronouns']) for oc in data['ocs']]
 
     # jinja2
+    print('running jinja2')
     data_dict: dict = {'bestiary': {'ocs': ocs}}
     html_rendered: str = template.render(data_dict)
+    Path("out/rendered.html").write_text(html_rendered)
 
     # css
     css_tailwind: CSS = CSS(string=OCS_CSS_BUILD_PATH.read_text())
     reset = CSS(string=Path("ocs/reset.css").read_text())
 
-    HTML(string=html_rendered).write_pdf(
+    print('---', Path(__file__).absolute().parent)
+
+    # pdf
+    print('writing PDF')
+    HTML(string=html_rendered, base_url=Path(__file__).absolute().parent).write_pdf(
         OCS_PDF_PATH,
         stylesheets=[reset, css_tailwind],
     )

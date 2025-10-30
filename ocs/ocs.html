@@ -8,6 +8,9 @@
 			<span class="text-3xl">of</span>
 			<br />
 			<span class="text-5xl">ORIGINAL CHARACTERS</span>
+			<img src="art/_main_durfjam_2025-10-30.png" class="bg-red-500 h-[25cm] w-[25cm]" />
+
+
 		</h1>
 	</div>
 
@@ -60,9 +63,13 @@
 						</div>
 						<div><strong>ML</strong> {{ npc.morale }}</div>
 					</div>
+
 					<!-- DESCRIPTION -->
 					<div class="mb-[0.2cm] *:border-black [&_p]:first:mt-0 [&_p]:mt-[0.1cm]">
-						{{ npc.desc }}</div>
+						{{ npc.desc }}
+					</div>
+
+					<!-- ABILITIES -->
 					<div>
 						<ul>
 							{% for abil in npc.abils %}
@@ -70,6 +77,13 @@
 							{% endfor %}
 						</ul>
 					</div>
+
+					<!-- ART -->
+					{% if npc.art_fullbody_path != "" %}
+					<span>art</span>
+					<img src="{{ npc.art_fullbody_path }}" class="bg-lime-500 h-[25cm] w-[25cm]" />
+
+					{% endif %}
 				</div>
 				{% endfor %}
 			</div>
