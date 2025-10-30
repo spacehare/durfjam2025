@@ -21,6 +21,8 @@ OCS_YAML_PATH: Path = Path(f"ocs/{OCS_STEM}.yaml")
 OCS_PDF_PATH: Path = Path(f"out/{PDF_STEM}.pdf")
 OCS_CSS_BUILD_PATH: Path = Path(f"out/out.css")
 
+PARENT = Path(__file__).absolute().parent
+
 
 class Pronouns(NamedTuple):
     # https://en.pronouns.page/he
@@ -56,10 +58,7 @@ class NPC:
         art_fullbody_filename = d.get('art_fullbody_filename', "")
         art_fullbody_path = ""
         if art_fullbody_filename:
-            art_fullbody_path = "file://" + str(
-                Path("ocs/art/" + art_fullbody_filename).absolute()
-            )
-            print(art_fullbody_filename)
+            art_fullbody_path = "art/" + art_fullbody_filename
 
         npc = NPC(
             name=d['name'],
@@ -100,14 +99,13 @@ def main() -> None:
     css_tailwind: CSS = CSS(string=OCS_CSS_BUILD_PATH.read_text())
     reset = CSS(string=Path("ocs/reset.css").read_text())
 
-    print('---', Path(__file__).absolute().parent)
-
     # pdf
     print('writing PDF')
-    HTML(string=html_rendered, base_url=Path(__file__).absolute().parent).write_pdf(
-        OCS_PDF_PATH,
-        stylesheets=[reset, css_tailwind],
-    )
+    HTML(
+        string=html_rendered,
+        encoding="utf-8",
+        base_url=PARENT,
+    ).write_pdf(OCS_PDF_PATH, stylesheets=[reset, css_tailwind])
 
 
 if __name__ == '__main__':
