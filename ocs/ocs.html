@@ -1,91 +1,89 @@
 <html>
 
 <body>
-	<div class="break-after-page">
+	<!-- COVER -->
+	<div class="break-after-page break-inside-avoid-page">
 		<h1 class="text-center text-6xl m-auto">
 			BESTIARY
 			<br />
 			<span class="text-3xl">of</span>
 			<br />
 			<span class="text-5xl">ORIGINAL CHARACTERS</span>
-			<img src="art/_main_durfjam_2025-10-30.png" class="bg-red-500 h-[25cm] w-[25cm]" />
-
-
 		</h1>
+		<img src="art/_main_durfjam_2025-10-30.png" class="max-h-[10cm] max-w-[10cm] mx-auto my-[5cm]" />
 	</div>
 
+	<!-- NPCS -->
 	<div class="break-after-page w-full">
 		<div>
-			<div class="flex flex-col gap-2 *:min-w-0 min-w-0">
-				<h1 class="underline font-black text-center text-2xl">NPCS</h1>
+			<div class="">
+				<!-- <h1 class="underline font-black text-center text-2xl">NPCS</h1> -->
+
 				{% for npc in bestiary.ocs %}
 				<!-- NPC CARD -->
-				<div class="border-[#ccc] border-2 border-solid box-border p-4 break-inside-avoid-page min-h-0">
-
-					<!-- PRONOUNS -->
-					<div class="flex justify-between">
-						<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
-						<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
-						<div class="flex self-center w-fit min-w-0">
-							<!-- <div class="whitespace-nowrap">{{ npc.pronouns | join(', ')}}</div> -->
-							{% for pronouns in npc.pronouns %}
-							<div class="whitespace-nowrap ml-[0.6cm] first:ml-0 min-w-0 border-2 border-[#ddd] p-1">
-								{{ pronouns }}
+				<div class="box-border break-inside-avoid-page flex first:mb-0 mb-[5mm]">
+					<!-- TEXT -->
+					<div class="min-w-0">
+						<!-- PRONOUNS -->
+						<div class="flex justify-between">
+							<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
+							<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
+							<div class="flex self-center w-fit min-w-0">
+								<!-- <div class="whitespace-nowrap">{{ npc.pronouns | join(', ')}}</div> -->
+								{% for pronouns in npc.pronouns %}
+								<div class="whitespace-nowrap ml-[0.6cm] first:ml-0 min-w-0">
+									{{ pronouns }}
+								</div>
+								{% endfor %}
 							</div>
-							{% endfor %}
 						</div>
-					</div>
-
-					<!-- ORIGINS -->
-					<div class="flex self-center w-fit min-w-0">
-						{% for place in npc.origin %}
-						<div class="whitespace-nowrap ml-[0.5cm] first:ml-0 min-w-0">
-							{{ place }}
-						</div>
-						{% if not loop.last %}
-						<div class="ml-[0.5cm]">
-							—
-						</div>
-						{% endif %}
-						{% endfor %}
-					</div>
-
-					<hr />
-
-					<!-- STATS -->
-					<div class="flex gap-[0.5cm] mb-[0.2cm]">
-						<div><strong>Skill</strong> {{ npc.skill }}</div>
-						<div>
-							<strong>HD</strong> {{ npc.hd }} ({{ npc.armor if npc.armor else 'no' }} Armor)
-							{% if npc.armor %}
-
+						<!-- ORIGINS -->
+						<div class="flex self-center w-fit min-w-0">
+							{% for place in npc.origin %}
+							<div class="whitespace-nowrap ml-[0.5cm] first:ml-0 min-w-0">
+								{{ place }}
+							</div>
+							{% if not loop.last %}
+							<div class="ml-[0.5cm]">
+								—
+							</div>
 							{% endif %}
-						</div>
-						<div><strong>ML</strong> {{ npc.morale }}</div>
-					</div>
-
-					<!-- DESCRIPTION -->
-					<div class="mb-[0.2cm] *:border-black [&_p]:first:mt-0 [&_p]:mt-[0.1cm]">
-						{{ npc.desc }}
-					</div>
-
-					<!-- ABILITIES -->
-					<div>
-						<ul>
-							{% for abil in npc.abils %}
-							<li>{{ abil }}</li>
 							{% endfor %}
-						</ul>
+						</div>
+						<hr />
+						<!-- STATS -->
+						<div class="flex gap-[0.5cm] mb-[0.2cm]">
+							<div><strong>Skill</strong> {{ npc.skill }}</div>
+							<div>
+								<strong>HD</strong> {{ npc.hd }} ({{ npc.armor if npc.armor else 'no' }} Armor)
+								{% if npc.armor %}
+								{% endif %}
+							</div>
+							<div><strong>ML</strong> {{ npc.morale }}</div>
+						</div>
+						<!-- DESCRIPTION -->
+						<div class="mb-[0.2cm] [&_p]:first:mt-0 [&_p]:mt-[0.1cm]">
+							{{ npc.desc }}
+						</div>
+						<!-- ABILITIES -->
+						<div>
+							<ul>
+								{% for abil in npc.abils %}
+								<li>{{ abil }}</li>
+								{% endfor %}
+							</ul>
+						</div>
 					</div>
 
 					<!-- ART -->
-					{% if npc.art_fullbody_path != "" %}
-					<img src="{{ npc.art_fullbody_path }}" class="bg-lime-500 h-[10cm] w-[10cm]" width="10cm"
-						height="10cm" />
-
-					{% endif %}
+					<div class="">
+						{% if npc.art_fullbody_path != "" %}
+						<img src="{{ npc.art_fullbody_path }}" class="w-[6cm]" />
+						{% endif %}
+					</div>
 				</div>
 				{% endfor %}
+
 			</div>
 		</div>
 	</div>

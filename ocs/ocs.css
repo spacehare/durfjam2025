@@ -16,6 +16,11 @@
 	}
 } */
 
+@page {
+	size: 8.5in 11in;
+	margin: 0.75in;
+}
+
 @page :left {
 	@bottom-left {
 		content: counter(page);
@@ -38,6 +43,7 @@
 html {
 	/* background-color: #ddd; */
 	font-family: "Atkinson Hyperlegible Next" !important;
+	font-size: 12pt;
 }
 
 .debug {
