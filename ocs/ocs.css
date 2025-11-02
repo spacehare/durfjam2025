@@ -51,8 +51,12 @@ html {
 }
 
 @layer components {
-	li {
+	ul li {
 		@apply list-disc ml-4;
+	}
+
+	ol li {
+		@apply list-decimal ml-4;
 	}
 
 	.debug {
