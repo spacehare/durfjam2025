@@ -44,6 +44,9 @@ class Pronouns(NamedTuple):
 class NPC:
     name: str
     art_fullbody_path: str
+    art_width: str
+    art_height: str
+    art_side: str
     origin: list[str]
     pronouns: list[Pronouns]
     skill: int | None
@@ -73,6 +76,9 @@ class NPC:
             desc=d.get('desc', ""),
             abils=d.get('abils', []),
             art_fullbody_path=art_fullbody_path,
+            art_width=d.get('art_width', '2in'),
+            art_height=d.get('art_height', '2in'),
+            art_side=d.get('art_side', 'right'),
         )
         npc.desc = str(markdown(npc.desc))
         npc.abils = [str(markdown(s)) for s in npc.abils]
@@ -87,7 +93,9 @@ def main() -> None:
     # yaml
     print('parsing YAML')
     data: dict = yaml.safe_load(OCS_YAML_PATH.open(encoding='utf-8'))
-    ocs: list[NPC] = [NPC.from_dict(oc, data['pronouns']) for oc in data['ocs']]
+    ocs: list[NPC] = [
+        NPC.from_dict(oc, data['pronouns']) for oc in data['ocs'] if not oc.get('skip')
+    ]
 
     # jinja2
     print('running jinja2')

@@ -21,7 +21,8 @@
 
 				{% for npc in bestiary.ocs %}
 				<!-- NPC CARD -->
-				<div class="box-border break-inside-avoid-page flex first:mt-0 mt-[5mm]">
+				<div
+					class="box-border break-inside-avoid-page flex first:mt-0 mt-[5mm] {{ 'flex-row-reverse' if npc.art_side == 'left' else 'flex-row' }}">
 					<!-- TEXT -->
 					<div class="min-w-0">
 						<!-- PRONOUNS -->
@@ -78,7 +79,7 @@
 					<!-- ART -->
 					<div class="">
 						{% if npc.art_fullbody_path != "" %}
-						<img src="{{ npc.art_fullbody_path }}" class="w-[6cm]" />
+						<img src="{{ npc.art_fullbody_path }}" class="w-[2in]" />
 						{% endif %}
 					</div>
 				</div>

@@ -7,29 +7,11 @@ pronouns: # https://en.pronouns.page/pronouns
   it: [it, it, its, its, itself]
 
 ocs:
-  - name: Zifix
-    from: [Sona]
-    pronouns: [they]
-    skill: 4
-    hd: 2
-    armor: 0
-    morale: 6
-    art_fullbody_filename: _main_durfjam_2025-10-30.png
-    desc: |
-      A gray cave goblin with poor eyesight but lots of magic power. Relies on their spellbook, because they're bad at memorizing spells.
-
-      Candid, friendly, lazy, fickle, and tempted by power. When overwhelmed or stressed out, they will stop speaking. Easily bribed with alcohol.
-    abils:
-      - |
-        **Spells** Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
-
-        - **Gateway.** Opens a two-way portal to Zif's pocket dimension (A floating island of pink flora, with an old stone temple in the center.)
-        - **Shape Stone.** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a hollow cylindrical shelter. Zif likes to ascend pillars beneath people's feet. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
-        - **Polymorph.** Target must make a WIL save, or be transformed into creature of the caster's choice. The target retains their intelligence.
-        - **Summon-Conjure.** Create a small portal, out of which an item or creature of the caster's choosing is ejected.
-
   - name: Io
-    art_fullbody_filename: _main_durfjam_2025-10-30.png
+    art_fullbody_filename: char_io.png
+    art_width: 2in
+    art_height: 2in
+    art_side: left
     from: [Sona]
     pronouns: [they, it]
     skill: 3
@@ -46,6 +28,29 @@ ocs:
       - "**Modular.** Io can, at will, detach their body parts at the seams."
       - "**Exceptional Senses.** Io gets a buff on any check that involves their eyes or ears, but they instead get a break to any action if the area is too loud or bright."
       - "**Repulsor.** A ranged weapon made from repurposed mining equipment. It can knockback everything in front of it with a loud sonic blast (DEX save). Has 3 uses before the battery runs out."
+
+  - name: Zifix
+    from: [Sona]
+    pronouns: [they]
+    skill: 4
+    hd: 2
+    armor: 0
+    morale: 6
+    art_width: 2in
+    art_height: 2in
+    art_fullbody_filename: char_zif.png
+    desc: |
+      A gray cave goblin with poor eyesight but lots of magic power. Relies on their spellbook, because they're bad at memorizing spells.
+
+      Candid, friendly, lazy, fickle, and tempted by power. When overwhelmed or stressed out, they will stop speaking. Easily bribed with alcohol.
+    abils:
+      - |
+        **Spells** Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
+
+        - **Gateway.** Opens a two-way portal to Zif's pocket dimension (A floating island of pink flora, with an old stone temple in the center.)
+        - **Shape Stone.** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a hollow cylindrical shelter. Zif likes to ascend pillars beneath people's feet. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
+        - **Polymorph.** Target must make a WIL save, or be transformed into creature of the caster's choice. The target retains their intelligence.
+        - **Summon-Conjure.** Create a small portal, out of which an item or creature of the caster's choosing is ejected.
 
   - name: Oolo
     from: [Sona, City of Nodd]
@@ -135,7 +140,7 @@ ocs:
     armor: 0
     morale: 6
     desc: |
-      A nerdy tinkerer and a cook. They speak kinda like a scientist from Half-Life, or just imagine what a stereotypical nerd might sound like.
+      A nerdy tinkerer, gardener, potter, sculptor and a cook. They speak kinda like a scientist from Half-Life, or just imagine what a stereotypical nerd might sound like. Enjoys exploring and experimenting.
     abils:
       - "**Crossbow.** 4 dmg (two handed)"
       - |
@@ -149,6 +154,10 @@ ocs:
   - name: Wolfbait
     from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
+    art_fullbody_filename: char_wolfbait.png
+    art_width: 2in
+    art_height: 3in
+    art_side: left
     skill: 7
     hd: 2
     armor: 8
@@ -164,6 +173,9 @@ ocs:
   - name: Pokkit
     from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
+    art_fullbody_filename: char_pokkit.png
+    art_width: 2in
+    art_height: 3in
     skill: 8
     hd: 3
     armor: 0
@@ -186,6 +198,7 @@ ocs:
   - name: Hellhound
     from: [Roleplay (Goblin settlement RP)]
     pronouns: [she]
+    skip: true
     skill: 6
     hd: 6
     armor: 0
