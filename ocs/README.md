@@ -1,7 +1,7 @@
 inspired to use a fancy programming framework by https://gitlab.com/Locorock/modurf
 
-notes
-in the pdf the abilities are stylized as such (but not consistently...?)
+notes  
+in the official DURF pdf the abilities are stylized as such (but not consistently...?)
 
 - **Active.** Does something.
 - **_Passive._** Does something.
@@ -9,7 +9,7 @@ in the pdf the abilities are stylized as such (but not consistently...?)
 
 # flex boxes
 
-avoid using flex boxes where possible. weasyprint does not place nice with them.
+avoid using flex boxes where possible. weasyprint does not always play nice with them.
 
 do something like this instead:
 
