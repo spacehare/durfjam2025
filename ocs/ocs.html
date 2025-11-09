@@ -10,7 +10,7 @@
 			<br />
 			<span class="text-5xl">ORIGINAL CHARACTERS</span>
 		</h1>
-		<img src="art/_main_durfjam_2025-10-30.png" class="max-h-[10cm] max-w-[10cm] mx-auto my-[5cm]" />
+		<img src="art/cover.png" class="max-h-[10cm] max-w-[10cm] mx-auto my-[5cm]" />
 	</div>
 
 	<div class="">
@@ -80,9 +80,7 @@
 				<!-- ART -->
 				<div class="">
 					{% if npc.art_fullbody_path != "" %}
-					<img src="{{ npc.art_fullbody_path }}"
-						class="{{ 'w-[3in]' if npc.art_width == '3in' else 'w-[2in]'}}" />
-					<!-- this is the most jank bullshit ever, but i can't get other conditionals to work -->
+					<img src="{{ npc.art_fullbody_path }}" class="w-[{{ npc.art_width }}]" />
 					{% endif %}
 				</div>
 			</div>

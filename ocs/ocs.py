@@ -1,3 +1,4 @@
+import argparse
 import logging
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -20,6 +21,7 @@ OCS_YAML_PATH: Path = Path(f"ocs/{OCS_STEM}.yaml")
 
 OCS_PDF_PATH: Path = Path(f"out/{PDF_STEM}.pdf")
 OCS_CSS_BUILD_PATH: Path = Path(f"out/out.css")
+OCS_HTML_JINJA2_PATH: Path = Path(f"out/jinja2.html")
 
 PARENT = Path(__file__).absolute().parent
 
@@ -86,7 +88,7 @@ class NPC:
         return npc
 
 
-def main() -> None:
+def command_jinja() -> None:
     html_raw: str = OCS_HTML_PATH.read_text(encoding='utf-8')
     template: Template = Template(html_raw)
 
@@ -101,8 +103,10 @@ def main() -> None:
     print('running jinja2')
     data_dict: dict = {'bestiary': {'ocs': ocs}}
     html_rendered: str = template.render(data_dict)
-    Path("out/rendered.html").write_text(html_rendered)
+    Path("out/jinja2.html").write_text(html_rendered)
 
+
+def command_pdf(html_rendered: str) -> None:
     # css
     css_tailwind: CSS = CSS(string=OCS_CSS_BUILD_PATH.read_text())
     reset = CSS(string=Path("ocs/reset.css").read_text())
@@ -117,4 +121,13 @@ def main() -> None:
 
 
 if __name__ == '__main__':
-    main()
+    ap = argparse.ArgumentParser()
+    ap.add_argument('command')
+    args = ap.parse_args()
+    command: str = args.command
+
+    match command:
+        case 'jinja2':
+            command_jinja()
+        case 'pdf':
+            command_pdf(OCS_HTML_JINJA2_PATH.read_text())

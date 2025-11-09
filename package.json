@@ -2,8 +2,9 @@
 	"scripts": {
 		"build:tailwindcss": "tailwindcss -i ./ocs/ocs.css -o ./out/out.css",
 		"build:postcss": "postcss ./ocs/ocs.css -o ./out/out.css",
-		"build:pdf": "py -m ocs.ocs",
-		"build": "bun run build:postcss && bun run build:pdf"
+		"build:pdf": "py -m ocs.ocs pdf",
+		"build:jinja2": "py -m ocs.ocs jinja2",
+		"build": "bun run build:jinja2 && bun run build:postcss && bun run build:pdf"
 	},
 	"dependencies": {
 		"@tailwindcss/postcss": "^4.1.14",
