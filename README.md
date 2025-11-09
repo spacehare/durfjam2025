@@ -5,7 +5,12 @@
 
 # running the program
 
-install the depndencies first with UV or pip.
+first, install:
+
+- the Python depndencies with UV or pip.
+- the Javascript dependencies with NPM or Bun.
+
+then you can run:
 
 ```
 .venv/scripts/activate
