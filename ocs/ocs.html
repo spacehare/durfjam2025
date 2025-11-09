@@ -80,7 +80,9 @@
 				<!-- ART -->
 				<div class="">
 					{% if npc.art_fullbody_path != "" %}
-					<img src="{{ npc.art_fullbody_path }}" class="w-[2in]" />
+					<img src="{{ npc.art_fullbody_path }}"
+						class="{{ 'w-[3in]' if npc.art_width == '3in' else 'w-[2in]'}}" />
+					<!-- this is the most jank bullshit ever, but i can't get other conditionals to work -->
 					{% endif %}
 				</div>
 			</div>
