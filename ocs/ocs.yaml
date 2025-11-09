@@ -19,7 +19,7 @@ ocs:
     armor: 5
     morale: 6
     desc: |
-      A small but durable robot-alien-space-hare who was created in a lab. Has four eyes (cameras) and four ears. They're probably here because their escape pod crash landed on this planet.
+      A small but durable robot-alien-space-hare who was created in a lab. Has four eyes (cameras) and four ears. They're probably here because their escape pod crash-landed on this planet.
 
       Io is curious and impressionable. They speak casually and use internet acronyms while talking aloud ("IDK", "LOL", "WTF").
     abils:
@@ -59,6 +59,9 @@ ocs:
     hd: 1
     armor: 0
     morale: 9
+    art_width: 3in
+    art_height: 3in
+    art_fullbody_filename: char_oolo.png
     desc: |
       A little bastard.
 
@@ -72,11 +75,12 @@ ocs:
 
         - **Charm.** WIL save or become friendly to caster for X turns.
         - **Clone.** Create a clone of the caster. The clone is *inactive* until the round after it is summoned. Their consciousness is shared, and it becomes hard to perform complex tasks as more clones are present.
-        - **Yoink.** Cause an item that the caster sees to fling towards the caster.
-        - **Yeet.** Cause an item that the caster sees to fling away from the caster.
+      # - **Yoink.** Cause an item that the caster sees to fling towards the caster.
+      # - **Yeet.** Cause an item that the caster sees to fling away from the caster.
 
   - name: Berry
     from: [Roleplay (Goblin settlement RP)]
+    skip: true
     pronouns: [they]
     skill: 2
     hd: 1
@@ -88,6 +92,7 @@ ocs:
   - name: Yrx
     from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
+    skip: true
     skill: 3
     hd: 1
     armor: 1
@@ -112,6 +117,7 @@ ocs:
 
   - name: One of Yrx's Chickens
     skill: 1
+    skip: true
     hd: 0
     armor: 0
     morale: 5
@@ -125,6 +131,7 @@ ocs:
     hd: null
     armor: 0
     morale: null
+    skip: true
     from: [Roleplay (Goblin settlement RP)]
     desc: A small smooth slime. It is mostly harmless. A slime's color is determined by its diet. It cannot be damaged, and cannot deal damage. It can selectively digest objects within its body, except for flesh.
     abils:
@@ -135,6 +142,7 @@ ocs:
   - name: Hoik
     pronouns: [they]
     from: [Roleplay (Goblin settlement RP)]
+    skip: true
     skill: 5
     hd: 2
     armor: 0
@@ -190,15 +198,16 @@ ocs:
       - "**Communion.** After spending a Turn (10 minutes) setting up the ritual candles and body paint in a dark room, Pokkit can commune with their benefactor."
 
   - name: Virro
+    skip: true
     from: [Roleplay (Goblin settlement RP)]
     pronouns: [they]
     desc: |
       A tailor, a seamster, a clothier. They have a personality like a manic cat. They don't care about much... except for their craft, which they can get quite excited about.
 
   - name: Hellhound
+    skip: true
     from: [Roleplay (Goblin settlement RP)]
     pronouns: [she]
-    skip: true
     skill: 6
     hd: 6
     armor: 0
@@ -209,6 +218,7 @@ ocs:
       - "**Bite.** 4 dmg."
 
   - name: Caylas
+    skip: true
     skill: 6
     hd: 6
     armor: 0
@@ -227,6 +237,7 @@ ocs:
     pronouns: [they]
     from: [D&D 5e (Shit Bird Shit Fight)]
     skill: 6
+    skip: true # too similar to Uzu, with the time constraints u_u
     hd: 6
     armor: 3
     morale: 10
@@ -247,6 +258,10 @@ ocs:
     desc: |
       A very powerful bug monster with a soft syrupy voice, punctuated with chitters and purrs. They are mostly interested in assimilating others into their brood as beloved minions.
     pronouns: [it, they]
+    art_width: 3in
+    art_height: 3in
+    art_fullbody_filename: char_uzu.png
+    art_side: left
     skill: 12
     hd: 8
     armor: 10
@@ -267,6 +282,9 @@ ocs:
   - name: Cleric Thruxx'Ondros
     from: [D&D 5e]
     pronouns: [they]
+    art_width: 3in
+    art_height: 3in
+    art_fullbody_filename: char_thruxx.png
     skill: 6
     hd: 8
     armor: 10
@@ -293,6 +311,7 @@ ocs:
         - **Supplicate Spirits.** In a zone that follows Thruxx, other beings can only move upon passing a STR roll, and are otherwise hindered by nebulous apparitions.
 
   - name: Honor Sprout
+    skip: true
     from: [D&D 5e]
     pronouns: [they]
     skill: 4
@@ -317,6 +336,7 @@ ocs:
         - **Pippi's Slumber.** Nearby targets with a combined HD total of no more than X+2, fall asleep.
 
   - name: Klakakak
+    skip: true
     pronouns: [it]
     skill: 6
     hd: 4
@@ -331,6 +351,7 @@ ocs:
       - "**Roots.** Magically guide roots and vines up from the ground to wrap around the target."
 
   - name: Morcialli
+    skip: true
     from: ["Crown of Kings: The Sorcery! Campaign. Advanced Fighting Fantasy 2e"]
     pronouns: [they]
     skill: 4
@@ -344,6 +365,7 @@ ocs:
       - "**Brawler.** +1 to unarmed strikes."
 
   - name: Moss
+    skip: true
     pronouns: [they]
     from: [Roleplay]
     skill: 11
@@ -364,6 +386,7 @@ ocs:
   - name: Mym
     from: [Valheim, Cackleheim, Roleplay]
     pronouns: [they]
+    skip: true
     skill: 3
     hd: 3
     armor: 6
@@ -377,6 +400,7 @@ ocs:
 
   - name: Pwiff Alabaster
     pronouns: [they]
+    skip: true
     from: [Numenara]
     skill: 3
     hd: 2
@@ -394,6 +418,7 @@ ocs:
   - name: Rangrim
     from: [D&D 5e (Tomb of Horrors)]
     pronouns: [they]
+    skip: true
     skill: 5
     hd: 4
     armor: 6
@@ -408,6 +433,7 @@ ocs:
   - name: Rigòth
     from: ["Blackbirds (Zweihander)"]
     pronouns: [they]
+    skip: true
     desc: |
       A spectrum of living plants. Likes to make jokes; doesn't take things too seriously. They are good at cooking, crafting, and survival.
     abils:
@@ -415,6 +441,7 @@ ocs:
       - "**Fragrant Foliage.** Rigòth's leaves smell very strongly of weed."
 
   - name: Finnio
+    skip: true
     from: [Baldur's Gate 3]
     pronouns: [they]
     skill: 5
@@ -430,6 +457,7 @@ ocs:
 
   - name: Krafn
     pronouns: [they, he]
+    skip: true
     from: [Roleplay (Bayou RP)]
     desc: |
       A tall bayou-dwelling imp. They act crude and lazy, doing what they desire without regard for others. They enjoy crafting traps, fishing, and trapping seafood. And sometimes, making a game out of trapping people.
@@ -440,6 +468,7 @@ ocs:
 
   - name: Rielle
     pronouns: [she]
+    skip: true
     from: [Roleplay (Bayou RP)]
     desc: |
       A feathery avian-harpy-pigeon person. She brings Krafn goodies in exchange for living with them in their swamp hut. She is likely to bother *others* for food and lodgings as well. She gifts little things, like coins or snacks, to nice people.

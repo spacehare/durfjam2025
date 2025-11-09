@@ -13,81 +13,100 @@
 		<img src="art/_main_durfjam_2025-10-30.png" class="max-h-[10cm] max-w-[10cm] mx-auto my-[5cm]" />
 	</div>
 
-	<!-- NPCS -->
-	<div class="break-after-page w-full">
-		<div>
-			<div class="">
-				<!-- <h1 class="underline font-black text-center text-2xl">NPCS</h1> -->
+	<div class="flex flex-col h-full justify-around content-between">
+		<div id="npcs">
+			<!-- <h1 class="underline font-black text-center text-2xl">NPCS</h1> -->
 
-				{% for npc in bestiary.ocs %}
-				<!-- NPC CARD -->
-				<div
-					class="box-border break-inside-avoid-page flex first:mt-0 mt-[5mm] {{ 'flex-row-reverse' if npc.art_side == 'left' else 'flex-row' }}">
-					<!-- TEXT -->
-					<div class="min-w-0">
-						<!-- PRONOUNS -->
-						<div class="flex justify-between">
-							<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
-							<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
-							<div class="flex self-center w-fit min-w-0">
-								<!-- <div class="whitespace-nowrap">{{ npc.pronouns | join(', ')}}</div> -->
-								{% for pronouns in npc.pronouns %}
-								<div class="whitespace-nowrap ml-[0.6cm] first:ml-0 min-w-0">
-									{{ pronouns }}
-								</div>
-								{% endfor %}
-							</div>
-						</div>
-						<!-- ORIGINS -->
+			{% for npc in bestiary.ocs %}
+			<!-- NPC CARD -->
+			<div class="box-border break-inside-avoid-page first:mt-0 mt-[5mm]
+						flex
+						{{ 'items-center' if npc.name != 'Zifix' else '' }}
+						{{ 'flex-row-reverse' if npc.art_side == 'left' else 'flex-row' }}
+						h-auto m-auto">
+				<!-- TEXT -->
+				<div class="min-w-0">
+					<!-- PRONOUNS -->
+					<div class="flex justify-between">
+						<h2 class="text-xl whitespace-nowrap">{{ npc.name }}</h2>
+						<!-- min-w-0 ; https://stackoverflow.com/a/38224283 -->
 						<div class="flex self-center w-fit min-w-0">
-							{% for place in npc.origin %}
-							<div class="whitespace-nowrap ml-[0.5cm] first:ml-0 min-w-0">
-								{{ place }}
+							<!-- <div class="whitespace-nowrap">{{ npc.pronouns | join(', ')}}</div> -->
+							{% for pronouns in npc.pronouns %}
+							<div class="whitespace-nowrap ml-[0.6cm] first:ml-0 min-w-0">
+								{{ pronouns }}
 							</div>
-							{% if not loop.last %}
-							<div class="ml-[0.5cm]">
-								—
-							</div>
-							{% endif %}
 							{% endfor %}
 						</div>
-						<hr />
-						<!-- STATS -->
-						<div class="flex gap-[0.5cm] mb-[0.2cm]">
-							<div><strong>Skill</strong> {{ npc.skill }}</div>
-							<div>
-								<strong>HD</strong> {{ npc.hd }} ({{ npc.armor if npc.armor else 'no' }} Armor)
-								{% if npc.armor %}
-								{% endif %}
-							</div>
-							<div><strong>ML</strong> {{ npc.morale }}</div>
-						</div>
-						<!-- DESCRIPTION -->
-						<div class="mb-[0.2cm] [&_p]:first:mt-0 [&_p]:mt-[0.1cm]">
-							{{ npc.desc }}
-						</div>
-						<!-- ABILITIES -->
-						<div>
-							<ul>
-								{% for abil in npc.abils %}
-								<li>{{ abil }}</li>
-								{% endfor %}
-							</ul>
-						</div>
 					</div>
-
-					<!-- ART -->
-					<div class="">
-						{% if npc.art_fullbody_path != "" %}
-						<img src="{{ npc.art_fullbody_path }}" class="w-[2in]" />
+					<!-- ORIGINS -->
+					<div class="flex self-center w-fit min-w-0">
+						{% for place in npc.origin %}
+						<div class="whitespace-nowrap ml-[0.5cm] first:ml-0 min-w-0">
+							{{ place }}
+						</div>
+						{% if not loop.last %}
+						<div class="ml-[0.5cm]">
+							—
+						</div>
 						{% endif %}
+						{% endfor %}
+					</div>
+					<hr />
+					<!-- STATS -->
+					<div class="flex gap-[0.5cm] mb-[0.2cm]">
+						<div><strong>Skill</strong> {{ npc.skill }}</div>
+						<div>
+							<strong>HD</strong> {{ npc.hd }} ({{ npc.armor if npc.armor else 'no' }} Armor)
+							{% if npc.armor %}
+							{% endif %}
+						</div>
+						<div><strong>ML</strong> {{ npc.morale }}</div>
+					</div>
+					<!-- DESCRIPTION -->
+					<div class="mb-[0.2cm] [&_p]:first:mt-0 [&_p]:mt-[0.1cm]">
+						{{ npc.desc }}
+					</div>
+					<!-- ABILITIES -->
+					<div>
+						<ul>
+							{% for abil in npc.abils %}
+							<li>{{ abil }}</li>
+							{% endfor %}
+						</ul>
 					</div>
 				</div>
-				{% endfor %}
 
+				<!-- ART -->
+				<div class="">
+					{% if npc.art_fullbody_path != "" %}
+					<img src="{{ npc.art_fullbody_path }}" class="w-[2in]" />
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+
+		</div>
+
+		<div class="min-h-0 bg-red-500" id="credit">
+			<div>Drawings made in Krita 3.5.12</div>
+			<div>
+				PDF made with Python (UV, Weasyprint, Jinja2, Markdown2, PyYAML, Beartype) and Bun (Tailwind, PostCSS).
+			</div>
+			<div>
+				You can find the source code on <a href="https://github.com/spacehare/durfjam2025">Github
+					(https://github.com/spacehare/durfjam2025)</a> under the MIT license.
+			</div>
+			<div>
+				Supplement made for <a href="https://itch.io/jam/durf-jam-2025">Durf Jam 2025
+					(https://itch.io/jam/durf-jam-2025)</a> under the CC-BY-NC-SA-4.0 license.
+			</div>
+			<div>
+				Supplement by <a href="https://hare.itch.io/">Rabbit (https://hare.itch.io/).</a>
 			</div>
 		</div>
 	</div>
+
 </body>
 
 </html>

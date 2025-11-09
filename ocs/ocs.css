@@ -64,10 +64,6 @@ html {
 	}
 }
 
-.oc-card {
-	padding: 2cm;
-}
-
 /* flexbox troubles */
 /* https://stackoverflow.com/questions/38223879/white-space-nowrap-breaks-flexbox-layout */
 /* https://github.com/Kozea/WeasyPrint/issues/1665#issuecomment-2139068800 */
