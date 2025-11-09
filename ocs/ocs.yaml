@@ -26,8 +26,8 @@ ocs:
       - "**Bunny Kick.** 3 dmg. Target makes a DEX save, or is knocked prone."
       - "**Overclock.** Io Purposefully pushes their body to its limits, overheating but getting an extra action. Next round, take 1 wound."
       - "**Modular.** Io can, at will, detach their body parts at the seams."
-      - "**Exceptional Senses.** Io gets a buff on any check that involves their eyes or ears — but they instead get a break to any action if the area is too loud or too bright."
-      - "**Repulsor.** A ranged weapon made from repurposed mining equipment. It can knockback everything in front of it with a loud sonic blast (DEX save). Has 3 uses before the battery runs out."
+      - "**Exceptional Senses.** Io gets a Buff on any check that involves their eyes or ears — but they instead get a Break to any action if the area is too loud or too bright."
+      - "**Repulsor.** A ranged weapon made from repurposed mining equipment. It can knock back everything in front of it with a loud sonic blast (DEX save). Has 3 uses before the battery runs out."
 
   - name: Zifix
     from: [Sona]
@@ -45,12 +45,12 @@ ocs:
       Candid, friendly, lazy, fickle, and tempted by power. When overwhelmed or stressed out, they will stop speaking. Easily bribed with alcohol.
     abils:
       - |
-        **Spells** Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
+        Zif has a few spells scribbled into their spellbook. The handwriting in the book is nearly illegible.
 
-        - **Gateway.** Opens a two-way portal to Zif's pocket dimension (An ever-storming floating island of pink flora, with an old stone temple in the center.)
-        - **Shape Stone.** Move rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a hollow cylindrical shelter. Zif likes to ascend pillars beneath people's feet and make them stuck at the top. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
+        - **Gateway.** Zif opens a two-way portal to their pocket dimension (an ever-storming floating island of pink flora, with an old stone temple in the center.)
+        - **Shape Stone.** Zif moves rock and stone to create structures and obstacles. Examples: A rectangular pillar, a field of tetrahedrons, a cuboid pit, a hollow cylindrical shelter. Zif likes to ascend pillars beneath people's feet and make them stuck at the top. They're also good at creating or removing walls in dungeons, altering the layout to confuse explorers for fun.
         - **Polymorph.** Target must make a WIL save, or be transformed into creature of the caster's choice. The target retains their intelligence. The spell wears off when Zif sleeps.
-        - **Summon-Conjure.** Create a small portal, out of which an item or creature of the caster's choosing is ejected.
+        - **Summon-Conjure.** Zif creates a small portal, out of which an item or creature of the caster's choosing is ejected.
 
   - name: Oolo
     from: [Sona, City of Nodd]
@@ -71,7 +71,7 @@ ocs:
       - "**Rod of soiling.** A magical laxative mace that does no damage, but causes the target's guts to roil. Upon failing a STR save, the target instantly voids their bowels."
       - "**Tenacious.** They don't feel any pain. An arrow to the head would just make them dizzy. *They can ignore lethal damage once.*"
       - |
-        **Spells** Oolo knows the following spells:
+        Oolo knows the following spells:
 
         - **Charm.** WIL save or become friendly to caster for X turns.
         - **Clone.** Create X clones of the caster. The clones are *inactive* until the round after they are summoned. Their consciousness is shared, and it becomes harder to perform complex tasks as more clones are present.
@@ -79,7 +79,7 @@ ocs:
       # - **Yeet.** Cause an item that the caster sees to fling away from the caster.
 
   - name: Berry
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     skip: true
     pronouns: [they]
     skill: 2
@@ -90,7 +90,7 @@ ocs:
       A friendly forager and dutiful helper. They are timid, meek, anxious, nonconfrontational, and want to stay out of trouble.
 
   - name: Yrx
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     pronouns: [they]
     skip: true
     skill: 3
@@ -121,7 +121,7 @@ ocs:
     hd: 0
     armor: 0
     morale: 5
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     desc: A chicken.
     abils:
       - "**Peck.** 1 damage, unless the target is wearing armor."
@@ -132,7 +132,7 @@ ocs:
     armor: 0
     morale: null
     skip: true
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     desc: A small smooth slime. It is mostly harmless. A slime's color is determined by its diet. It cannot be damaged, and cannot deal damage. It can selectively digest objects within its body, except for flesh.
     abils:
       - "**Stick.** The slime attaches itself to a target."
@@ -141,7 +141,7 @@ ocs:
 
   - name: Hoik
     pronouns: [they]
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     skip: true
     skill: 5
     hd: 2
@@ -160,7 +160,7 @@ ocs:
         1. Cogwork Peon (Skill 5, HD 2). An expertly designed automaton. Varies in size. Watch out for exposed pinch point hazards.
 
   - name: Wolfbait
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     pronouns: [they]
     art_fullbody_filename: char_wolfbait.png
     art_width: 2in
@@ -177,11 +177,11 @@ ocs:
     abils:
       - "**Guardian.** If an adjacent ally is about to be hit, take the hit instead."
       - "**Shield.** Reduce all incoming damage by 1, to a minimum of 1."
-      - "**Tusks/Horns.** 4 dmg"
+      - "**Tusks/Horns.** 4 dmg."
       - "**Ornate Spear.** A beautiful and shiny +1 spear. 5 (4 + 1) dmg."
 
   - name: Pokkit
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     pronouns: [they]
     art_fullbody_filename: char_pokkit.png
     art_width: 2in
@@ -201,14 +201,14 @@ ocs:
 
   - name: Virro
     skip: true
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     pronouns: [they]
     desc: |
       A tailor, a seamster, a clothier. They have a personality like a manic cat. They don't care about much... except for their craft, which they can get quite excited about.
 
   - name: Hellhound
     skip: true
-    from: [Roleplay (Goblin settlement RP)]
+    from: [Roleplay, Goblin settlement RP]
     pronouns: [she]
     skill: 6
     hd: 6
@@ -270,7 +270,7 @@ ocs:
     morale: 10
     abils:
       - "Uzu can take two actions each round."
-      - "**Claws.** 4 damage"
+      - "**Claws.** 4 dmg."
       - "**Intoxicating Pheromones.** Emit pheromones from its body. STR save or succumb to the fumes and become charmed by Uzu."
       - "**Weave Webs.** Can create sticky traps out of web, or enwrap creatures in tough cocoons."
       - "**Acid.** Can carve out rock to create tunnels and warrens."
@@ -278,7 +278,7 @@ ocs:
       - "**Swallow.** Harmlessly store the target inside of its body, gathering data to use for mutations."
       - "**Mutate.** Change and adapt a target creature's form with attributes from a creature that Uzu has previously assimilated or eaten. Can target itself for no roll, but takes 1 Round (10 seconds). WIL save to resist. Uzu gains a Buff when mutating *swallowed* targets."
       - "**Revive.** After taking lethal damage, Uzu will resuscitate after 1 day."
-      - "**Synthesize.** Uzu can synthesize many different chemicals: Depressants, stimulants, sedatives, emetics, aphrodisiacs, analgesics..."
+      - "**Synthesize.** Uzu can synthesize many different chemicals: depressants, stimulants, sedatives, emetics, aphrodisiacs, analgesics..."
       - "**Chitin.** Uzu has natural armor that provides the same benefits as a Shield (reduces damage by 1, to a minimum of 1)."
 
   - name: Cleric Thruxx'Ondros
@@ -295,7 +295,7 @@ ocs:
       A large elephant-person that works in service of their god. They dislike heretics and strangers, but will tolerate you if you give them some gold. They feel a little lonely being so far from their garden-temple. They wield a giant tower shield and a large mace.
     abils:
       - "**Trunk.** They can grapple with their strong trunk, and gain a Buff when doing so."
-      - "**Natural Armor.** Their thick skin reduces damage like a shield (reduces by 1, to a minimum of 1)"
+      - "**Natural Armor.** Their thick skin reduces damage like a shield (reduces by 1, to a minimum of 1)."
       - "**Studded Tower Shield.** Their giant shield blocks *all* damage from the front."
       - "**Censer-Mace.** A +1 mace. Deals 5 (4 + 1) damage. Incense smoke pours out from small gaps in the mace's head."
       - |
